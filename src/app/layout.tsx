@@ -20,13 +20,48 @@ const monaSans = localFont({
   weight: '200 900',
 })
 
+// let siteUrl = process.env.NEXT_PUBLIC_SITE_URL
+let siteUrl = "https://ui.lndev.me"
+
 export const metadata: Metadata = {
-  title: 'Commit - Open-source Git client for macOS minimalists',
+  title: {
+    template: '%s - lndev/ui',
+    default: 'Fine components coded by lndev.',
+  },
   description:
-    'Commit is a lightweight Git client you can open from anywhere any time you’re ready to commit your work with a single keyboard shortcut. It’s fast, beautiful, and completely unnecessary.',
+    'A fun collection of small, well-coded components to streamline your development process.',
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://www.ui.lndev.me/',
+    siteName: 'lndev/ui',
+    images: [
+      {
+        url: 'https://www.ui.lndev.me/banner.png',
+        width: 2560,
+        height: 1440,
+        alt: 'lndev/ui',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    site: '@ln_dev7',
+    creator: '@ln_dev7',
+    images: [
+      {
+        url: 'https://www.ui.lndev.me/banner.png',
+        width: 2560,
+        height: 1440,
+        alt: 'lndev/ui',
+      },
+    ],
+  },
+  authors: [{ name: 'Leonel NGOYA', url: 'https://www.lndev.me/' }],
+  keywords: ['ui', 'lndev', 'components'],
   alternates: {
     types: {
-      'application/rss+xml': `${process.env.NEXT_PUBLIC_SITE_URL}/feed.xml`,
+      'application/rss+xml': `${siteUrl}/feed.xml`,
     },
   },
 }
