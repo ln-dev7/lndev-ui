@@ -24,10 +24,7 @@ const monaSans = localFont({
 let siteUrl = "https://ui.lndev.me"
 
 export const metadata: Metadata = {
-  title: {
-    template: '%s - lndev/ui',
-    default: 'Fine components coded by lndev.',
-  },
+  title: "lndev/ui",
   description:
     'A fun collection of small, well-coded components to streamline your development process.',
   openGraph: {
