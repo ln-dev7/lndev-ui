@@ -53,7 +53,7 @@ export function Intro() {
             </div>
             <h1 className="mt-14 font-display text-4xl/tight font-semibold text-center text-white">
                 Fine components coded by {' '}
-                <span className="text-sky-300">lndev.</span>
+                <Link href="https://lndev.me" target="_blank" className="text-sky-300">lndev.</Link>
             </h1>
             <p className="mt-4 text-sm/6 text-gray-300 text-center">
                 A fun collection of small, well-coded components to streamline your development process.
