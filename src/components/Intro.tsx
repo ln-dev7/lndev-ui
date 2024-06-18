@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import {SignUpForm} from '@/components/SignUpForm'
+import {SignInForm} from '@/components/SignInForm'
 
 import {IconLink} from '@/components/IconLink'
 import {Logo} from '@/components/Logo'
@@ -53,12 +53,12 @@ export function Intro() {
             </div>
             <h1 className="mt-14 font-display text-4xl/tight font-semibold text-center text-white">
                 Fine components coded by {' '}
-                <span className="text-sky-300">lndev.</span>
+                <Link href="https://lndev.me" target="_blank" className="text-sky-300">lndev.</Link>
             </h1>
             <p className="mt-4 text-sm/6 text-gray-300 text-center">
                 A fun collection of small, well-coded components to streamline your development process.
             </p>
-            <SignUpForm/>
+            <SignInForm/>
             <div className="mt-8 flex flex-wrap justify-center gap-x-1 gap-y-3">
                 <IconLink href="https://lndev.me/about" icon={BookIcon} className="flex-none">
                     lndev.me
@@ -77,7 +77,7 @@ export function Intro() {
 export function IntroFooter() {
     return (
         <p className="flex items-baseline gap-x-2 text-[0.8125rem]/6 text-gray-500">
-            Brought to you by{' '}
+            Follow{' '}
             <IconLink href="https://x.com/ln_dev7" icon={XIcon} compact>
                 Leonel Ngoya
             </IconLink>
