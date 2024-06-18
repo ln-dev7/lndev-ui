@@ -28,9 +28,7 @@ export default function HowItWorks() {
                     How it works ?
                 </AlertTitle>
                 <AlertDescription>
-                    You can click on the "Get source code" button to get the source code of the component.
-                    If you want to see the inspiration behind the component, you can click on the "Inspiration"
-                    link.
+                    Hello
                 </AlertDescription>
                 <AlertActions>
                     <Button onClick={() => setIsOpen(false)} outline>
