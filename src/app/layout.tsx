@@ -6,6 +6,7 @@ import clsx from 'clsx'
 import { Providers } from '@/app/providers'
 
 import '@/styles/tailwind.css'
+import {DiscountAlert} from "@/components/DiscountAlert";
 
 const inter = Inter({
   subsets: ['latin'],
@@ -75,7 +76,9 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body className="flex min-h-full flex-col bg-white dark:bg-gray-950">
-        <Providers>{children}</Providers>
+        <Providers>{children}
+          <DiscountAlert/>
+        </Providers>
       </body>
     </html>
   )

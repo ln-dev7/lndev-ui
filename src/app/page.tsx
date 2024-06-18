@@ -5,99 +5,106 @@ import {Layout} from '@/components/Layout'
 import {Container} from '@/components/Container'
 import Image from 'next/image'
 import Link from 'next/link'
-import {Button} from '@/components/Button'
+import {Button} from '@/catalyst/button'
 import {Border} from '@/components/Border'
 import {formatDate} from "@/libs/formatDate";
+import {Badge} from '@/catalyst/badge'
+import {Heading, Subheading} from '@/catalyst/heading'
+import {Strong, Text, TextLink} from '@/catalyst/text'
+
+import HowItWorks from "@/components/HowItWorks";
 
 const allComponents = [
     {
-        client: 'Bright Path',
-        service: 'Web design & development',
-        date: '2021-03-01',
-        title: 'Bright Path',
+        name: 'Dynamic Action Bar',
+        date: '2024-06-13',
+        title: 'Dynamic Action Bar',
         summary: [
-            'Bright Path is a leading provider of online learning solutions for schools and universities. They needed a new website to showcase their products and services.',
-            'We designed and built a custom website that highlights their unique value proposition and drives conversions.',
+            ''
         ],
-        href: '/case-studies/bright-path',
+        href: 'https://lndev-ui.lemonsqueezy.com/buy/ccac8754-562c-4be3-9266-ceb4d8011160',
+        premium: false,
+        stack: ['Vite/Html', 'JS/Gsap', 'Tailwind'],
+        inspiration: 'https://x.com/henrikruscon/status/1800862855648129449',
     },
     {
-        client: 'Family Fund',
-        service: 'Web design & development',
-        date: '2021-02-15',
-        title: 'Family Fund',
+        name: 'Login Button',
+        date: '2024-06-12',
+        title: 'Login Button',
         summary: [
-            'Family Fund is a charity that provides grants to families raising disabled or seriously ill children. They needed a new website to improve the grant application process.',
-            'We designed and built a custom website that makes it easy for families to apply for grants and access support services.',
+            ''
         ],
-        href: '/case-studies/family-fund',
+        href: 'https://lndev-ui.lemonsqueezy.com/buy/6d231eb6-515b-454a-868c-dfd199753e2b',
+        premium: false,
+        stack: ['Vite/Html', 'JS/Gsap', 'Tailwind'],
+        inspiration: 'https://x.com/kaihenthoiwane/status/1715445477548970011',
     },
-    {
-        client: 'Green Life',
-        service: 'Web design & development',
-        date: '2021-01-30',
-        title: 'Green Life',
-        summary: [
-            'Green Life is a sustainable living blog that promotes eco-friendly products and services. They needed a new website to attract more readers and advertisers.',
-            'We designed and built a custom website that showcases their content and drives revenue through advertising and affiliate marketing.',
-        ],
-        href: '/case-studies/green-life',
-    },
-    {
-        client: 'Home Work',
-        service: 'Web design & development',
-        date: '2021-01-15',
-        title: 'Home Work',
-        summary: [
-            'Home Work is a remote job board that connects job seekers with employers offering remote work opportunities. They needed a new website to improve the job search experience.',
-            'We designed and built a custom website that makes it easy for job seekers to find and apply for remote jobs.',
-        ],
-        href: '/case-studies/home-work',
-    },
-    ]
+]
 
 export default function Page() {
     return (
         <Layout>
-            <Container className="mt-40">
-                <div className="mt-10 space-y-20 sm:space-y-24 lg:space-y-32">
+            <Container className="mt-0">
+               {/*<HowItWorks />*/}
+                <div className="space-y-20 sm:space-y-24 lg:space-y-32">
                     {allComponents.map((component) => (
-                        <article key={component.client}>
+                        <article key={component.name}>
                             <Border className="grid grid-cols-3 gap-x-8 gap-y-8 pt-16">
                                 <div
                                     className="col-span-full sm:flex sm:items-center sm:justify-between sm:gap-x-8 lg:col-span-1 lg:block">
                                     <div className="sm:flex sm:items-center sm:gap-x-6 lg:block">
-                                        <h3 className="mt-6 text-sm font-semibold text-neutral-950 sm:mt-0 lg:mt-8">
-                                            {component.client}
-                                        </h3>
+                                        <Subheading className="mt-6 sm:mt-0 lg:mt-8">
+                                            {component.name}
+                                        </Subheading>
                                     </div>
                                     <div className="mt-1 flex gap-x-4 sm:mt-0 lg:block">
-                                        <p className="text-sm tracking-tight text-neutral-950 after:ml-4 after:font-semibold after:text-neutral-300 after:content-['/'] lg:mt-2 lg:after:hidden">
-                                            {component.service}
-                                        </p>
-                                        <p className="text-sm text-neutral-950 lg:mt-2">
+                                        <div className="flex gap-3 lg:mt-2">
+                                            {component.stack.map((stack) => (
+                                                <Badge key={stack}>{stack}</Badge>
+                                            ))}
+                                        </div>
+                                        <Text className="lg:mt-2">
                                             <time dateTime={component.date}>
                                                 {formatDate(component.date)}
                                             </time>
-                                        </p>
+                                        </Text>
                                     </div>
                                 </div>
                                 <div className="col-span-full lg:col-span-2 lg:max-w-2xl">
-                                    <p className="font-display text-4xl font-medium text-neutral-950">
+                                    <Heading className="flex items-center">
+                                        {
+                                            component.premium && (
+                                                <SparkleIcon className="w-4 h-4 mr-2 shrink-0"/>
+                                            )
+                                        }
                                         <Link href={component.href}>{component.title}</Link>
-                                    </p>
+                                    </Heading>
                                     <div className="mt-6 space-y-6 text-base text-neutral-600">
                                         {component.summary.map((paragraph) => (
-                                            <p key={paragraph}>{paragraph}</p>
+                                            <Text key={paragraph}>{paragraph}</Text>
                                         ))}
                                     </div>
-                                    <div className="mt-8 flex">
+                                    <div className="mt-8 flex flex-col gap-2">
                                         <Button
+                                            className="w-fit"
                                             href={component.href}
-                                            aria-label={`Read case study: ${component.client}`}
+                                            target="_blank"
+                                            aria-label={`Component: ${component.name}`}
                                         >
-                                            Buy this component
+                                            {
+                                                component.premium && (
+                                                    <SparkleIcon className="w-4 h-4 mr-1 shrink-0"/>
+                                                )
+                                            }
+                                            Get source code
                                         </Button>
+                                        {
+                                            component.inspiration && (
+                                                <TextLink href={component.inspiration} className="self-end" target="_blank">
+                                                    Inspiration
+                                                </TextLink>
+                                            )
+                                        }
                                     </div>
                                 </div>
                             </Border>
