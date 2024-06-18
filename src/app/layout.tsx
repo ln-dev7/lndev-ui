@@ -70,16 +70,19 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html
-      lang="en"
-      className={clsx('h-full antialiased', inter.variable, monaSans.variable)}
-      suppressHydrationWarning
-    >
+      <html
+          lang="en"
+          className={clsx('h-full antialiased', inter.variable, monaSans.variable)}
+          suppressHydrationWarning
+      >
       <body className="flex min-h-full flex-col bg-white dark:bg-gray-950">
-        <Providers>{children}
-          <DiscountAlert/>
-        </Providers>
+      <Providers>{children}
+        <DiscountAlert/>
+      </Providers>
       </body>
-    </html>
+
+      </html>
   )
 }
+
+

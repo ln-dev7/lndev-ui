@@ -22,7 +22,8 @@ const allComponents = [
         summary: [
             ''
         ],
-        href: 'https://lndev-ui.lemonsqueezy.com/buy/ccac8754-562c-4be3-9266-ceb4d8011160',
+        purchase: 'https://lndev-ui.lemonsqueezy.com/buy/ccac8754-562c-4be3-9266-ceb4d8011160',
+        preview: 'https://dynamic-action-bar.vercel.app/',
         premium: false,
         stack: ['Vite/Html', 'JS/Gsap', 'Tailwind'],
         inspiration: 'https://x.com/henrikruscon/status/1800862855648129449',
@@ -34,7 +35,8 @@ const allComponents = [
         summary: [
             ''
         ],
-        href: 'https://lndev-ui.lemonsqueezy.com/buy/6d231eb6-515b-454a-868c-dfd199753e2b',
+        purchase: 'https://lndev-ui.lemonsqueezy.com/buy/6d231eb6-515b-454a-868c-dfd199753e2b',
+        preview: 'https://login-button-1.vercel.app/',
         premium: false,
         stack: ['Vite/Html', 'JS/Gsap', 'Tailwind'],
         inspiration: 'https://x.com/kaihenthoiwane/status/1715445477548970011',
@@ -70,15 +72,23 @@ export default function Page() {
                                         </Text>
                                     </div>
                                 </div>
-                                <div className="col-span-full lg:col-span-2 lg:max-w-2xl">
+                                <div className="col-span-full lg:col-span-2">
                                     <Heading className="flex items-center">
                                         {
                                             component.premium && (
                                                 <SparkleIcon className="w-4 h-4 mr-2 shrink-0"/>
                                             )
                                         }
-                                        <Link href={component.href}>{component.title}</Link>
+                                        <Link href={component.purchase}>{component.title}</Link>
                                     </Heading>
+                                    <div className="flex h-[400px] p-1 mt-6 w-full items-center justify-center rounded-xl border border-black/10 dark:border-white/10 md:h-[640px] md:flex-1">
+    <iframe
+        src={component.preview}
+        className="w-full h-full rounded-lg"
+        loading="lazy"
+        title={component.name}
+    />
+                                    </div>
                                     <div className="mt-6 space-y-6 text-base text-neutral-600">
                                         {component.summary.map((paragraph) => (
                                             <Text key={paragraph}>{paragraph}</Text>
@@ -87,7 +97,7 @@ export default function Page() {
                                     <div className="mt-8 flex flex-col gap-2">
                                         <Button
                                             className="w-fit"
-                                            href={component.href}
+                                            href={component.purchase}
                                             target="_blank"
                                             aria-label={`Component: ${component.name}`}
                                         >
