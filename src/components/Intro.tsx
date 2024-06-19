@@ -66,9 +66,6 @@ export function Intro() {
                 <IconLink href="https://github.com/ln-dev7" icon={GitHubIcon} className="flex-none">
                     GitHub
                 </IconLink>
-                <IconLink href="/feed.xml" icon={FeedIcon} className="flex-none">
-                    RSS
-                </IconLink>
             </div>
         </>
     )
