@@ -1,4 +1,4 @@
-interface Component {
+export interface ComponentListInterface {
     name: string
     date: string
     title: string
@@ -10,7 +10,7 @@ interface Component {
     inspiration?: string
 }
 
-export const allComponents = [
+export const componentsList: ComponentListInterface[] = [
     {
         name: 'Dynamic Action Bar',
         date: '2024-06-13',
@@ -84,6 +84,6 @@ export const allComponents = [
         purchase: 'https://lndev-ui.lemonsqueezy.com/buy/2052c9a1-9132-47dc-bb57-34fc926dc435',
         preview: 'https://form-with-validation1.vercel.app/',
         stack: ['Html', 'JS', 'Sass'],
-        price: 0
+        price: 3
     },
 ]
