@@ -37,4 +37,53 @@ export const allComponents = [
         inspiration: 'https://x.com/kaihenthoiwane/status/1715445477548970011',
         price: 0
     },
+    {
+        name: 'Dual Button',
+        date: '2023-11-05',
+        title: 'Dual Button',
+        summary: [
+            ''
+        ],
+        purchase: 'https://lndev-ui.lemonsqueezy.com/buy/daaea3a5-2c69-4254-8dfd-d041276b3268',
+        preview: 'https://dual-button-proto.vercel.app/',
+        stack: ['Vite/Html', 'JS/Gsap', 'Sass'],
+        inspiration: 'https://www.figma.com/file/xIZPFfjruOuPR1oiVgVUgC/Prototype-Dial-Button-(Community)?node-id=1%3A191&mode=dev',
+        price: 0
+    },
+    {
+        name: 'Dark Mode Toggle',
+        date: '2023-10-22',
+        title: 'Dark Mode Toggle',
+        summary: [
+            ''
+        ],
+        purchase: 'https://lndev-ui.lemonsqueezy.com/buy/ead34820-936b-43d3-8e54-5814e4a77044',
+        preview: 'https://toggle-dark-mode-button.vercel.app/',
+        stack: ['Vite/Html', 'JS/Gsap', 'Sass'],
+        price: 0
+    },
+    {
+        name: 'Delete Interaction',
+        date: '2023-07-21',
+        title: 'Delete Interaction',
+        summary: [
+            ''
+        ],
+        purchase: 'https://lndev-ui.lemonsqueezy.com/buy/8e600533-d148-4727-8004-6b0f1611b5c7',
+        preview: 'https://delete-interaction-1.vercel.app/',
+        stack: ['Vite/Html', 'JS/Gsap', 'Sass'],
+        price: 0
+    },
+    {
+        name: 'Form With Validation',
+        date: '2022-10-20',
+        title: 'Form With Validation',
+        summary: [
+            ''
+        ],
+        purchase: 'https://lndev-ui.lemonsqueezy.com/buy/2052c9a1-9132-47dc-bb57-34fc926dc435',
+        preview: 'https://form-with-validation1.vercel.app/',
+        stack: ['Html', 'JS', 'Sass'],
+        price: 0
+    },
 ]
