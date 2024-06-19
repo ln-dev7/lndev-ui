@@ -31,11 +31,11 @@ export const metadata: Metadata = {
     openGraph: {
         type: 'website',
         locale: 'en_US',
-        url: 'https://www.ui.lndev.me/',
+        url: 'https://ui.lndev.me/',
         siteName: 'lndev/ui',
         images: [
             {
-                url: 'https://www.ui.lndev.me/banner.png',
+                url: 'https://ui.lndev.me/banner.png',
                 width: 2560,
                 height: 1440,
                 alt: 'lndev/ui',
@@ -48,14 +48,14 @@ export const metadata: Metadata = {
         creator: '@ln_dev7',
         images: [
             {
-                url: 'https://www.ui.lndev.me/banner.png',
+                url: 'https://ui.lndev.me/banner.png',
                 width: 2560,
                 height: 1440,
                 alt: 'lndev/ui',
             },
         ],
     },
-    authors: [{name: 'Leonel NGOYA', url: 'https://www.lndev.me/'}],
+    authors: [{name: 'Leonel NGOYA', url: 'https://lndev.me/'}],
     keywords: ['ui', 'lndev', 'components'],
     alternates: {
         types: {
