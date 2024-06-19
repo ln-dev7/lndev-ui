@@ -70,7 +70,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
       <FixedSidebar main={<Intro />} footer={<IntroFooter />} />
       <ThemeToggle />
       <div className="relative flex-auto">
-        <main className="space-y-20 py-16 sm:space-y-32 sm:py-20">
+        <main className="space-y-20 pt-16 pb-24 sm:space-y-32 sm:pt-20 sm:pb-28">
           {children}
         </main>
       </div>
