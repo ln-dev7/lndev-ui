@@ -23,7 +23,9 @@ export default function Page() {
                 {/*<HowItWorks />*/}
                 <div className="space-y-10 sm:space-y-12 lg:space-y-16">
                     {allComponents.map((component) => (
-                        <article key={component.name}>
+                        <article key={component.name}
+                                 id={component.name.toLowerCase().replace(/\s/g, "-")}
+                        >
                             <Border className="grid grid-cols-3 gap-x-8 gap-y-8 pt-6 md:pt-16">
                                 <div className="col-span-full lg:col-span-1">
                                     <div
