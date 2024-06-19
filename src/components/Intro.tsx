@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import {SignInForm} from '@/components/SignInForm'
+import {ButtonAllAccess} from '@/components/ButtonAllAccess'
 
 import {IconLink} from '@/components/IconLink'
 import {Logo} from '@/components/Logo'
@@ -59,6 +60,7 @@ export function Intro() {
                 A fun collection of small, well-coded components to streamline your development process.
             </p>
             {/*<SignInForm/>*/}
+            <ButtonAllAccess/>
             <div className="mt-8 flex flex-wrap justify-center gap-x-1 gap-y-3">
                 <IconLink href="https://lndev.me/about" icon={BookIcon} className="flex-none">
                     lndev.me
