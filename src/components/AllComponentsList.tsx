@@ -10,7 +10,7 @@ import {Strong, Text, TextLink} from '@/catalyst/text'
 import {Select} from '@/catalyst/select'
 import {componentsList, ComponentListInterface} from "@/constants/components-list";
 import {ExternalLink} from "lucide-react";
-import ButtonPremium from "@/components/ButtonPremium";
+import {ButtonPremium} from "@/components/ButtonPremium";
 import {useState} from "react";
 
 export function AllComponentsList() {
