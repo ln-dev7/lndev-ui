@@ -3,8 +3,7 @@ import * as cheerio from 'cheerio'
 import { Feed } from 'feed'
 
 export async function GET(req: Request) {
-  // let siteUrl = process.env.NEXT_PUBLIC_SITE_URL
-  let siteUrl = "https://ui.lndev.me"
+  let siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://ui.lndev.me"
 
   if (!siteUrl) {
     throw Error('Missing NEXT_PUBLIC_SITE_URL environment variable')
@@ -17,7 +16,7 @@ export async function GET(req: Request) {
 
   let feed = new Feed({
     title: 'ui.lndev.me',
-    description: 'Open-source Git client for macOS minimalists',
+    description: 'A fun collection of small, well-coded components to streamline your development process.',
     author,
     id: siteUrl,
     link: siteUrl,
@@ -37,19 +36,24 @@ export async function GET(req: Request) {
     assert(typeof id === 'string')
 
     let url = `${siteUrl}/#${id}`
-    let heading = $(this).find('h2').first()
-    let title = heading.text()
+    let title = $(this).find('h2').first().text()
     let date = $(this).find('time').first().attr('datetime')
 
-    // Tidy content
-    heading.remove()
-    $(this).find('h3 svg').remove()
-
-    let content = $(this).find('[data-mdx-content]').first().html()
+    // Extract content
+    let componentName = $(this).find('.component-name').text()
+    let componentStack = $(this).find('.component-stack').map((_, el) => $(el).text()).get().join(', ')
+    let componentSummary = $(this).find('.component-summary').html()
 
     assert(typeof title === 'string')
     assert(typeof date === 'string')
-    assert(typeof content === 'string')
+    assert(typeof componentSummary === 'string')
+
+    // Construct content for RSS feed
+    let content = `
+      <h2>${componentName}</h2>
+      <p>Stack: ${componentStack}</p>
+      <div>${componentSummary}</div>
+    `
 
     feed.addItem({
       title,
