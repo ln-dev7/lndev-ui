@@ -58,7 +58,7 @@ export function Intro() {
             <p className="mt-4 text-sm/6 text-gray-300 text-center">
                 A fun collection of small, well-coded components to streamline your development process.
             </p>
-            <SignInForm/>
+            {/*<SignInForm/>*/}
             <div className="mt-8 flex flex-wrap justify-center gap-x-1 gap-y-3">
                 <IconLink href="https://lndev.me/about" icon={BookIcon} className="flex-none">
                     lndev.me

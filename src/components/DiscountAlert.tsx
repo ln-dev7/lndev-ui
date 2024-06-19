@@ -27,7 +27,8 @@ export function DiscountAlert() {
                     >
                         <div
                             className="pointer-events-auto flex items-center justify-between gap-x-6 bg-black dark:bg-white px-6 py-2.5 backdrop-blur-md sm:rounded-xl sm:py-3 sm:pl-4 sm:pr-3.5">
-                            <p className="text-sm leading-6 text-white dark:text-black">For the launch of lndev/ui we offer 15% discount
+                            <p className="text-sm leading-6 text-white dark:text-black">For the launch of lndev/ui we
+                                offer 15% discount
                                 with this coupon code <a href="#" onClick={handleCouponClick}
                                 >
 
@@ -41,7 +42,8 @@ export function DiscountAlert() {
                             <button type="button" className="-m-1.5 flex-none p-1.5"
                                     onClick={handleDismiss}
                             ><span className="sr-only">Dismiss</span>
-                                <svg className="h-5 w-5 text-white dark:text-black" viewBox="0 0 20 20" fill="currentColor"
+                                <svg className="h-5 w-5 text-white dark:text-black" viewBox="0 0 20 20"
+                                     fill="currentColor"
                                      aria-hidden="true">
                                     <path
                                         d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z"></path>
