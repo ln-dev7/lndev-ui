@@ -25,25 +25,48 @@ export default function Page() {
                     {allComponents.map((component) => (
                         <article key={component.name}>
                             <Border className="grid grid-cols-3 gap-x-8 gap-y-8 pt-6 md:pt-16">
-                                <div
-                                    className="col-span-full sm:flex sm:items-center sm:justify-between sm:gap-x-8 lg:col-span-1 lg:block">
-                                    <div className="sm:flex sm:items-center sm:gap-x-6 lg:block">
-                                        <Subheading className="mt-6 sm:mt-0 lg:mt-8">
-                                            {component.name}
-                                        </Subheading>
-                                    </div>
-                                    <div className="mt-1 flex flex-wrap gap-4 sm:mt-0 lg:block">
-                                        <div className="flex gap-3 lg:mt-2 flex-wrap">
-                                            {component.stack.map((stack) => (
-                                                <Badge key={stack}>{stack}</Badge>
-                                            ))}
+                                <div className="col-span-full lg:col-span-1">
+                                    <div
+                                        className="sm:flex sm:items-center sm:justify-between sm:gap-x-8 lg:block">
+                                        <div className="hidden sm:flex sm:items-center sm:gap-x-6 lg:block">
+                                            <Subheading className="mt-6 sm:mt-0 lg:mt-8">
+                                                {component.name}
+                                            </Subheading>
                                         </div>
-                                        <Text className="lg:mt-2">
-                                            <time dateTime={component.date}>
-                                                {formatDate(component.date)}
-                                            </time>
-                                        </Text>
+                                        <div className="mt-1 flex flex-wrap gap-4 sm:mt-0 lg:block">
+                                            <div className="flex gap-3 lg:mt-2 flex-wrap">
+                                                {component.stack.map((stack) => (
+                                                    <Badge key={stack}>{stack}</Badge>
+                                                ))}
+                                            </div>
+                                            <Text className="lg:mt-2">
+                                                <time dateTime={component.date}>
+                                                    {formatDate(component.date)}
+                                                </time>
+                                            </Text>
+                                        </div>
                                     </div>
+                                    <Button
+                                        className="w-fit mt-4"
+                                        href={component.purchase}
+                                        target="_blank"
+                                        aria-label={`Component: ${component.name}`}
+                                    >
+                                        {
+                                            component.price > 0 && (
+                                                <SparkleIcon className="w-4 h-4 mr-1 shrink-0"/>
+                                            )
+                                        }
+                                        Get source code
+                                        {
+                                            component.price > 0 && (
+                                                <>
+                                                    <span className="w-1 h-1 bg-white rounded-full"></span>
+                                                    <span className="">{component.price} €</span>
+                                                </>
+                                            )
+                                        }
+                                    </Button>
                                 </div>
                                 <div className="col-span-full lg:col-span-2">
                                     <Heading className="flex items-center">
@@ -76,38 +99,17 @@ export default function Page() {
                                             <Text key={paragraph}>{paragraph}</Text>
                                         ))}
                                     </div>
-                                    <div className="mt-8 flex flex-col gap-2">
-                                        <Button
-                                            className="w-fit"
-                                            href={component.purchase}
-                                            target="_blank"
-                                            aria-label={`Component: ${component.name}`}
-                                        >
-                                            {
-                                                component.price > 0 && (
-                                                    <SparkleIcon className="w-4 h-4 mr-1 shrink-0"/>
-                                                )
-                                            }
-                                            Get source code
-                                            {
-                                                component.price > 0 && (
-                                                    <>
-                                                        <span className="w-1 h-1 bg-white rounded-full"></span>
-                                                        <span className="">{component.price} €</span>
-                                                    </>
-                                                )
-                                            }
-                                        </Button>
-                                        {
-                                            component.inspiration && (
-                                                <Button href={component.inspiration} className="self-end" target="_blank"
+                                    {
+                                        component.inspiration && (
+                                            <div className="w-full flex items-center justify-end">
+                                                <Button href={component.inspiration} className="" target="_blank"
                                                         plain>
                                                     Inspiration
                                                     <ExternalLink className="w-4 h-4"/>
                                                 </Button>
-                                            )
-                                        }
-                                    </div>
+                                            </div>
+                                        )
+                                    }
                                 </div>
                             </Border>
                         </article>
