@@ -27,11 +27,8 @@ export function DiscountAlert() {
                     >
                         <div
                             className="pointer-events-auto flex items-center justify-between gap-x-6 bg-black dark:bg-white px-6 py-2.5 backdrop-blur-md sm:rounded-xl sm:py-3 sm:pl-4 sm:pr-3.5">
-                            <p className="text-sm leading-6 text-white dark:text-black">For the launch of lndev/ui we
-                                offer 25% discount
-                                with this coupon code <span onClick={handleCouponClick}
-                                >
-
+                            <p className="text-sm leading-6 text-white dark:text-black">For the launch, we offer 25%
+                                discount on premium purchases with this discount code <span onClick={handleCouponClick}>
                     <span
                         className="ml-1 cursor-pointer rounded-full bg-white dark:bg-black px-2 py-0.5 text-sm font-medium text-black dark:text-white">
                         {
