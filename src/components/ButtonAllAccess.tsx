@@ -10,7 +10,7 @@ import {ComponentListInterface} from "@/constants/components-list";
 
 export function ButtonAllAccess() {
     let [isOpen, setIsOpen] = useState(false)
-    const PRICE = 30
+    const PRICE = 25
     return (
         <div className="w-full flex items-center justify-center mt-8">
             <Button
