@@ -36,7 +36,7 @@ export function AllComponentsList() {
             >
                 <option value="all">All</option>
                 <option value="free">Free</option>
-                <option value="Premium">premium</option>
+                <option value="Premium">Premium</option>
             </Select>
             {filteredComponents.map((component: ComponentListInterface) => (
                 <article key={component.name}
