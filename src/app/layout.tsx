@@ -78,7 +78,7 @@ export default function RootLayout({
         <body className="flex min-h-full flex-col bg-white dark:bg-gray-950">
         <Providers>
             {children}
-            <DiscountAlert/>
+            {/*<DiscountAlert/>*/}
         </Providers>
         </body>
 
