@@ -31,7 +31,7 @@ export function AllComponentsList() {
     return (
         <div className="space-y-4">
             <Select name="status"
-                    className="w-40"
+                    className="!w-40"
                     onChange={(e) => filterComponents(e.target.value)}
             >
                 <option value="all">All</option>
