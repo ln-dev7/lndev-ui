@@ -34,8 +34,7 @@ export const componentsList: ComponentListInterface[] = [
         purchase: 'https://lndev-ui.lemonsqueezy.com/buy/6d231eb6-515b-454a-868c-dfd199753e2b',
         preview: 'https://login-button-1.vercel.app/',
         stack: ['Vite/Html', 'JS/Gsap', 'Sass'],
-        inspiration: 'https://x.com/kaihenthoiwane/status/1715445477548970011',
-        price: 0
+        price: 3
     },
     {
         name: 'Dual Button',
@@ -84,6 +83,6 @@ export const componentsList: ComponentListInterface[] = [
         purchase: 'https://lndev-ui.lemonsqueezy.com/buy/2052c9a1-9132-47dc-bb57-34fc926dc435',
         preview: 'https://form-with-validation1.vercel.app/',
         stack: ['Html', 'JS', 'Sass'],
-        price: 3
+        price: 0
     },
 ]
