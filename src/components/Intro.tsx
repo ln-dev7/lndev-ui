@@ -74,7 +74,6 @@ export function Intro() {
 export function IntroFooter() {
     return (
         <p className="flex items-baseline gap-x-2 text-[0.8125rem]/6 text-gray-500">
-            Follow{' '}
             <IconLink href="https://x.com/ln_dev7" icon={XIcon} compact>
                 Leonel Ngoya
             </IconLink>

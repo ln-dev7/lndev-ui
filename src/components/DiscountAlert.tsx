@@ -28,8 +28,8 @@ export function DiscountAlert() {
                         <div
                             className="pointer-events-auto flex items-center justify-between gap-x-6 bg-black dark:bg-white px-6 py-2.5 backdrop-blur-md sm:rounded-xl sm:py-3 sm:pl-4 sm:pr-3.5">
                             <p className="text-sm leading-6 text-white dark:text-black">For the launch of lndev/ui we
-                                offer 15% discount
-                                with this coupon code <a href="#" onClick={handleCouponClick}
+                                offer 25% discount
+                                with this coupon code <span onClick={handleCouponClick}
                                 >
 
                     <span
@@ -37,7 +37,7 @@ export function DiscountAlert() {
                         {
                             isCopied ? 'Copied !' : DISCOUNT_CODE
                         }
-                    </span></a>
+                    </span></span>
                             </p>
                             <button type="button" className="-m-1.5 flex-none p-1.5"
                                     onClick={handleDismiss}
