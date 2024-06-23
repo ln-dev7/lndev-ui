@@ -55,7 +55,7 @@ export function AllComponentsList() {
           key={component.name}
           id={component.name.toLowerCase().replace(/\s/g, '-')}
         >
-          <Border className="grid grid-cols-3 gap-x-8 gap-y-8 pt-6 md:pt-16">
+          <Border className="grid grid-cols-3 gap-x-8 gap-y-8 pb-4 pt-6 md:pb-10 md:pt-16">
             <div className="col-span-full lg:col-span-1">
               <div className="sm:flex sm:items-center sm:justify-between sm:gap-x-8 lg:block">
                 <div className="hidden sm:flex sm:items-center sm:gap-x-6 lg:block">
@@ -115,13 +115,17 @@ export function AllComponentsList() {
                   title={component.name}
                 />
               </div>
-              <div className="mt-6 space-y-6 text-base text-neutral-600">
-                {component.summary.map((paragraph) => (
-                  <Text key={paragraph}>{paragraph}</Text>
-                ))}
-              </div>
-              {component.inspiration && (
-                <div className="flex w-full items-center justify-end">
+              <div className="mt-4 flex w-full items-center justify-between">
+                <Button
+                  href={component.preview}
+                  className=""
+                  target="_blank"
+                  plain
+                >
+                  Preview
+                  <ExternalLink className="h-4 w-4" />
+                </Button>
+                {component.inspiration && (
                   <Button
                     href={component.inspiration}
                     className=""
@@ -131,8 +135,8 @@ export function AllComponentsList() {
                     Inspiration
                     <ExternalLink className="h-4 w-4" />
                   </Button>
-                </div>
-              )}
+                )}
+              </div>
             </div>
           </Border>
         </article>
