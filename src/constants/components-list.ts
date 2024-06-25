@@ -8,9 +8,23 @@ export interface ComponentListInterface {
   stack: string[]
   price: number
   inspiration?: string
+  blur?: boolean
 }
 
 export const componentsList: ComponentListInterface[] = [
+  {
+    name: 'Interactive Touristic Gallery',
+    date: '2024-06-25',
+    title: 'Interactive Touristic Gallery',
+    summary: [''],
+    purchase:
+      'https://lndev-ui.lemonsqueezy.com/buy/bb8deae7-098e-40c2-a34e-33de9c7833c5',
+    preview: 'https://interactive-bloc-touristic-gallery.vercel.app/',
+    stack: ['Vite/Html', 'JS/Gsap', 'Tailwind'],
+    inspiration: 'https://x.com/EmaniUi/status/1804922365828051220',
+    price: 0,
+    blur: true,
+  },
   {
     name: 'Interactive Hamburger Menu',
     date: '2024-06-23',

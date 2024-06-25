@@ -107,13 +107,27 @@ export function AllComponentsList() {
                   </Badge>
                 )}
               </Heading>
-              <div className="mt-6 flex h-[400px] w-full items-center justify-center rounded-xl border border-black/10 p-1 md:h-[640px] md:flex-1 dark:border-white/10">
+              <div className="relative mt-6 flex h-[400px] w-full items-center justify-center rounded-xl border border-black/10 p-1 md:h-[640px] md:flex-1 dark:border-white/10">
                 <iframe
                   src={component.preview}
                   className="h-full w-full rounded-lg"
                   loading="lazy"
                   title={component.name}
                 />
+                {component.blur && (
+                  <div className="absolute inset-0 p-1">
+                    <div className="flex h-full w-full items-center justify-center rounded-lg bg-black/5 dark:bg-black/50 backdrop-blur-lg">
+                      <Button
+                        className="absolute bottom-4"
+                        href={component.preview}
+                        target="_blank"
+                      >
+                        View demo on big screen
+                        <ExternalLink className="h-4 w-4" />
+                      </Button>
+                    </div>
+                  </div>
+                )}
               </div>
               <div className="mt-4 flex w-full items-center justify-between">
                 <Button
