@@ -72,7 +72,7 @@ export function Intro() {
           lndev.me
         </IconLink>
         <IconLink
-          href="https://github.com/ln-dev7"
+          href="https://github.com/ln-dev7/ui.lndev.me"
           icon={GitHubIcon}
           className="flex-none"
         >
