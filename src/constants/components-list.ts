@@ -25,6 +25,18 @@ export const componentsList: ComponentListInterface[] = [
     price: 3,
   },
   {
+    name: 'Will you be my valentine',
+    date: '2024-07-09',
+    title: 'Will you be my valentine',
+    summary: [''],
+    purchase:
+      'https://lndev-ui.lemonsqueezy.com/buy/12b07402-e831-481c-b2f4-5f114067ba4c',
+    preview: 'https://will-you-be-my-valentine-6lvl.vercel.app/',
+    stack: ['Vite/Html', 'JS/Gsap', 'Scss'],
+    inspiration: 'https://www.figma.com/proto/aJApWjxpJFumL0bWIKjobP/Will-you-be-my-Valentine%3F-(Community)?type=design&node-id=1-2&t=aJIwMu7bwluIs3Le-0&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=1%3A2',
+    price: 3,
+  },
+  {
     name: 'Interactive Touristic Gallery',
     date: '2024-06-25',
     title: 'Interactive Touristic Gallery',
