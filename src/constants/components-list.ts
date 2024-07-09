@@ -12,6 +12,18 @@ export interface ComponentListInterface {
 }
 
 export const componentsList: ComponentListInterface[] = [
+    {
+    name: 'Input animation',
+    date: '2024-07-09',
+    title: 'Input animation',
+    summary: [''],
+    purchase:
+      'https://lndev-ui.lemonsqueezy.com/buy/ddcc71e2-7183-43b3-bc8e-08db3e81d234',
+    preview: 'https://password-strength-anim.vercel.app/',
+    stack: ['Vite/Html', 'JS/Gsap', 'Scss'],
+    inspiration: 'https://x.com/ln_dev7/status/1721123003180748881?s=46',
+    price: 3,
+  },
   {
     name: 'Interactive Touristic Gallery',
     date: '2024-06-25',
