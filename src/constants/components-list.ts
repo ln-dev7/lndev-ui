@@ -12,7 +12,19 @@ export interface ComponentListInterface {
 }
 
 export const componentsList: ComponentListInterface[] = [
-    {
+  {
+    name: 'Steps animation',
+    date: '2024-07-15',
+    title: 'Steps animation',
+    summary: [''],
+    purchase:
+      'https://lndev-ui.lemonsqueezy.com/buy/308263c9-5299-4c6d-9640-52bdaef6d4b9',
+    preview: 'https://steps-animation-pied.vercel.app/',
+    stack: ['Vite/Html', 'JS/Gsap', 'Scss'],
+    inspiration: 'https://x.com/zzerou_/status/1812509007648846300?s=46',
+    price: 3,
+  },
+  {
     name: 'Input animation',
     date: '2024-07-09',
     title: 'Input animation',
@@ -33,7 +45,8 @@ export const componentsList: ComponentListInterface[] = [
       'https://lndev-ui.lemonsqueezy.com/buy/12b07402-e831-481c-b2f4-5f114067ba4c',
     preview: 'https://will-you-be-my-valentine-6lvl.vercel.app/',
     stack: ['Vite/Html', 'JS/Gsap', 'Scss'],
-    inspiration: 'https://www.figma.com/proto/aJApWjxpJFumL0bWIKjobP/Will-you-be-my-Valentine%3F-(Community)?type=design&node-id=1-2&t=aJIwMu7bwluIs3Le-0&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=1%3A2',
+    inspiration:
+      'https://www.figma.com/proto/aJApWjxpJFumL0bWIKjobP/Will-you-be-my-Valentine%3F-(Community)?type=design&node-id=1-2&t=aJIwMu7bwluIs3Le-0&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=1%3A2',
     price: 3,
   },
   {
