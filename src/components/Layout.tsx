@@ -65,10 +65,16 @@ function FixedSidebar({
   )
 }
 
-export function Layout({ children }: { children: React.ReactNode }) {
+export function Layout({
+  children,
+  page,
+}: {
+  children: React.ReactNode
+  page: 'home' | 'templates'
+}) {
   return (
     <>
-      <FixedSidebar main={<Intro />} footer={<IntroFooter />} />
+      <FixedSidebar main={<Intro page={page} />} footer={<IntroFooter />} />
       <ThemeToggle />
       <PH />
       <div className="relative flex-auto">

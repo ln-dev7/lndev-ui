@@ -41,7 +41,7 @@ export function ButtonAllAccess() {
             <X className="h-4 w-4" />
           </Button>
         </div>
-        <AlertTitle>All access to lndev/ui Premium</AlertTitle>
+        <AlertTitle>All access to lndev/ui ( components ) Premium</AlertTitle>
         <AlertDescription>
           You wish to pay <Strong>{PRICE} euros</Strong> for lifetime access to
           all premium components. <br />

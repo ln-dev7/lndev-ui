@@ -1,9 +1,9 @@
 import Link from 'next/link'
-import { SignInForm } from '@/components/SignInForm'
 import { ButtonAllAccess } from '@/components/ButtonAllAccess'
 
 import { IconLink } from '@/components/IconLink'
 import { Logo } from '@/components/Logo'
+import { ArrowRight } from 'lucide-react'
 
 function BookIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
@@ -41,7 +41,7 @@ function XIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   )
 }
 
-export function Intro() {
+export function Intro({ page }: { page: 'home' | 'templates' }) {
   return (
     <>
       <div className="flex items-center justify-center">
@@ -49,20 +49,8 @@ export function Intro() {
           <Logo className="inline-block h-8 w-auto" />
         </Link>
       </div>
-      <h1 className="mt-14 text-center font-display text-4xl/tight font-semibold text-white">
-        Fine components coded by{' '}
-        <Link href="https://lndev.me" target="_blank" className="text-sky-300">
-          lndev.
-        </Link>
-      </h1>
-      <p className="mt-4 text-center text-sm/6 text-gray-300">
-        A fun collection of small, well-coded components to streamline your
-        development process.
-      </p>
-      {/*<SignInForm/>*/}
-      <div className="mt-8">
-        <ButtonAllAccess />
-      </div>
+      {page === 'home' && <IntroHome />}
+      {page === 'templates' && <IntroTemplates />}
       <div className="mt-8 flex flex-wrap justify-center gap-x-1 gap-y-3">
         <IconLink
           href="https://lndev.me/about"
@@ -79,6 +67,63 @@ export function Intro() {
           GitHub
         </IconLink>
       </div>
+    </>
+  )
+}
+
+export function IntroHome() {
+  return (
+    <>
+      <div className="mt-14 flex w-full items-center justify-center">
+        <a
+          className="inline-flex w-fit items-center rounded-lg bg-slate-800 px-3 py-1 text-sm font-medium"
+          href="/templates"
+        >
+          🚀
+          <div
+            data-orientation="vertical"
+            className="mx-2 h-4 w-[1px] shrink-0 bg-slate-700"
+          ></div>
+          <span className="text-slate-200">Introducing templates</span>
+          <ArrowRight className="ml-2 h-4 w-4 text-slate-200" />
+        </a>
+      </div>
+      <h1 className="mt-4 text-center font-display text-4xl/tight font-semibold text-white">
+        Fine components coded by{' '}
+        <Link href="https://lndev.me" target="_blank" className="text-sky-300">
+          lndev.
+        </Link>
+      </h1>
+      <p className="mt-4 text-center text-sm/6 text-gray-300">
+        A fun collection of small, well-coded components to streamline your
+        development process.
+      </p>
+      <div className="mt-8">
+        <ButtonAllAccess />
+      </div>
+    </>
+  )
+}
+
+export function IntroTemplates() {
+  return (
+    <>
+      <div className="mt-14 flex w-full items-center justify-center">
+        <Link
+          className="inline-flex w-fit items-center rounded-lg bg-slate-800 px-3 py-1 text-sm font-medium"
+          href="/"
+        >
+          <span className="text-slate-200">Back to home</span>
+          <ArrowRight className="ml-2 h-4 w-4 text-slate-200" />
+        </Link>
+      </div>
+      <h1 className="mt-4 text-center font-display text-4xl/tight font-semibold text-white">
+        Templates
+      </h1>
+      <p className="mt-4 text-center text-sm/6 text-gray-300">
+        A collection of templates to help you get started with your next project
+        faster.
+      </p>
     </>
   )
 }
