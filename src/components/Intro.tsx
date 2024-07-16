@@ -3,7 +3,7 @@ import { ButtonAllAccess } from '@/components/ButtonAllAccess'
 
 import { IconLink } from '@/components/IconLink'
 import { Logo } from '@/components/Logo'
-import { ArrowRight } from 'lucide-react'
+import { ArrowLeft, ArrowRight } from 'lucide-react'
 
 function BookIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
@@ -113,8 +113,8 @@ export function IntroTemplates() {
           className="inline-flex w-fit items-center rounded-lg bg-slate-800 px-3 py-1 text-sm font-medium"
           href="/"
         >
+          <ArrowLeft className="mr-2 h-4 w-4 text-slate-200" />
           <span className="text-slate-200">Back to home</span>
-          <ArrowRight className="ml-2 h-4 w-4 text-slate-200" />
         </Link>
       </div>
       <h1 className="mt-4 text-center font-display text-4xl/tight font-semibold text-white">
