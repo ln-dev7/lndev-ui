@@ -16,8 +16,9 @@ export default function Template({
 }: {
   template: TemplatesListInterface
 }) {
+  const id = template.name.toLowerCase().replace(/\s/g, '-')
   return (
-    <article id={template.name.toLowerCase().replace(/\s/g, '-')}>
+    <article id={id}>
       <Border className="grid grid-cols-3 gap-x-8 gap-y-8 pb-4 pt-6 md:pb-10 md:pt-16">
         <div className="col-span-full lg:col-span-1">
           <div className="sm:flex sm:items-center sm:justify-between sm:gap-x-8 lg:block">
@@ -27,7 +28,7 @@ export default function Template({
               </Subheading>
             </div>
             {template.summary && (
-              <div className="mt-3 mb-5 space-y-6 text-base text-neutral-600">
+              <div className="mb-5 mt-3 space-y-6 text-base text-neutral-600">
                 {template.summary.map((paragraph) => (
                   <Text key={paragraph}>{paragraph}</Text>
                 ))}
@@ -73,9 +74,7 @@ export default function Template({
             {template.price > 0 && (
               <SparkleIcon className="mr-2 h-4 w-4 shrink-0" />
             )}
-            <Link href={template.preview} target="_blank">
-              {template.title}
-            </Link>
+            <Link href={`#${id}`}>{template.title}</Link>
             {template.price > 0 ? (
               <Badge className="ml-2 shrink-0" color="amber">
                 {template.price} €

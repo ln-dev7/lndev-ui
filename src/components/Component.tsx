@@ -15,8 +15,9 @@ export default function Component({
 }: {
   component: ComponentListInterface
 }) {
+  const id = component.name.toLowerCase().replace(/\s/g, '-')
   return (
-    <article id={component.name.toLowerCase().replace(/\s/g, '-')}>
+    <article id={id}>
       <Border className="grid grid-cols-3 gap-x-8 gap-y-8 pb-4 pt-6 md:pb-10 md:pt-16">
         <div className="col-span-full lg:col-span-1">
           <div className="sm:flex sm:items-center sm:justify-between sm:gap-x-8 lg:block">
@@ -56,9 +57,7 @@ export default function Component({
             {component.price > 0 && (
               <SparkleIcon className="mr-2 h-4 w-4 shrink-0" />
             )}
-            <Link href={component.preview} target="_blank">
-              {component.title}
-            </Link>
+            <Link href={`#${id}`}>{component.title}</Link>
             {component.price > 0 ? (
               <Badge className="ml-2 shrink-0" color="amber">
                 {component.price} €
