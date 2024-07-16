@@ -1,5 +1,5 @@
 import { StaticImageData } from 'next/image'
-import CreativePortfolio1 from '@/images/tempaltes/creative-portfolio.jpg'
+import CreativePortfolio from '@/images/tempaltes/creative-portfolio.jpg'
 
 export interface TemplatesListInterface {
   name: string
@@ -11,7 +11,9 @@ export interface TemplatesListInterface {
   stack: string[]
   price: number
   inspiration?: string
-  images: StaticImageData[]
+  image: StaticImageData
+  imageWidth: number
+  imageHeight: number
 }
 
 export const templatesList: TemplatesListInterface[] = [
@@ -27,6 +29,8 @@ export const templatesList: TemplatesListInterface[] = [
     preview: 'https://v0.leonelngoya.com/',
     stack: ['NextJS', 'Tailwind', 'Framer Motion', 'GSAP', 'TS'],
     price: 129,
-    images: [CreativePortfolio1],
+    image: CreativePortfolio,
+    imageWidth: 1600,
+    imageHeight: 1200,
   },
 ]

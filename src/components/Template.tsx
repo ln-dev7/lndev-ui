@@ -87,10 +87,11 @@ export default function Template({
           </Heading>
           <div className="relative mt-6 flex h-[400px] w-full items-center justify-center rounded-xl border border-black/10 p-1 md:h-[640px] md:flex-1 dark:border-white/10">
             <Image
-              src={template.images[0]}
+              src={template.image}
               alt={template.title}
-              objectFit="cover"
-              className="h-full w-full rounded-lg"
+              className="h-full w-full rounded-lg object-cover"
+              width={template.imageWidth}
+              height={template.imageHeight}
             />
           </div>
           <div className="mt-4 flex w-full items-center justify-between">
