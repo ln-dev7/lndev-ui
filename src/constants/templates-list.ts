@@ -1,5 +1,6 @@
 import { StaticImageData } from 'next/image'
 import CreativePortfolio from '@/images/tempaltes/creative-portfolio.jpg'
+import DeveloperPortfolio from '@/images/tempaltes/developer-portfolio.png'
 
 export interface TemplatesListInterface {
   name: string
@@ -32,5 +33,21 @@ export const templatesList: TemplatesListInterface[] = [
     image: CreativePortfolio,
     imageWidth: 1600,
     imageHeight: 1200,
+  },
+  {
+    name: 'Developer Portfolio',
+    date: '2024-05-10',
+    title: 'Developer Portfolio',
+    summary: [
+      'Discover a developer portfolio site showcasing a collection of projects and skills. This site features a clean and professional design, highlighting expertise in web development and software engineering. Ideal for showcasing a portfolio of work and attracting potential clients or employers.',
+    ],
+    purchase:
+      'https://lndev-ui.lemonsqueezy.com/buy/1fa6d2af-7efb-4f9b-886e-976f52f1865f',
+    preview: 'https://v1.lndev.me/',
+    stack: ['Next 13 - Page', 'Scss', 'Framer Motion', 'TS'],
+    price: 99,
+    image: DeveloperPortfolio,
+    imageWidth: 2870,
+    imageHeight: 1556,
   },
 ]
