@@ -18,6 +18,18 @@ export interface ComponentListInterface {
 
 export const componentsList: ComponentListInterface[] = [
   {
+    name: 'Dynamic Carousel 2',
+    date: '2024-07-23',
+    title: 'Dynamic Carousel 2',
+    summary: [''],
+    purchase:
+      'https://lndev-ui.lemonsqueezy.com/buy/cb538723-fff1-49f6-9e13-72c17831338e',
+    preview: 'https://stripe-section-2.vercel.app/',
+    stack: ['Vite/Html', 'JS/Gsap', 'Tailwind'],
+    inspiration: 'https://stripe.com/',
+    price: 3,
+  },
+  {
     name: 'Dynamic Carousel 1',
     date: '2024-07-22',
     title: 'Dynamic Carousel 1',
@@ -66,7 +78,7 @@ export const componentsList: ComponentListInterface[] = [
     inspiration:
       'https://www.figma.com/proto/aJApWjxpJFumL0bWIKjobP/Will-you-be-my-Valentine%3F-(Community)?type=design&node-id=1-2&t=aJIwMu7bwluIs3Le-0&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=1%3A2',
     price: 3,
-    image: WillYouBeMyValentine
+    image: WillYouBeMyValentine,
   },
   {
     name: 'Interactive Touristic Gallery',
@@ -79,7 +91,7 @@ export const componentsList: ComponentListInterface[] = [
     stack: ['Vite/Html', 'JS/Gsap', 'Tailwind'],
     inspiration: 'https://x.com/EmaniUi/status/1804922365828051220',
     price: 0,
-    image: InteractiveTouristicGallery
+    image: InteractiveTouristicGallery,
   },
   {
     name: 'Interactive Hamburger Menu',
