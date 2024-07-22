@@ -13,6 +13,18 @@ export interface ComponentListInterface {
 
 export const componentsList: ComponentListInterface[] = [
   {
+    name: 'Dynamic Carousel 1',
+    date: '2024-07-22',
+    title: 'Dynamic Carousel 1',
+    summary: [''],
+    purchase:
+      'https://lndev-ui.lemonsqueezy.com/buy/ae035003-80d6-49c6-9a61-6e3ea0db9941',
+    preview: 'https://stripe-section-1.vercel.app/',
+    stack: ['Vite/Html', 'JS/Gsap', 'Tailwind'],
+    inspiration: 'https://stripe.com/',
+    price: 0,
+  },
+  {
     name: 'Steps animation',
     date: '2024-07-15',
     title: 'Steps animation',
@@ -20,7 +32,7 @@ export const componentsList: ComponentListInterface[] = [
     purchase:
       'https://lndev-ui.lemonsqueezy.com/buy/308263c9-5299-4c6d-9640-52bdaef6d4b9',
     preview: 'https://steps-animation-pied.vercel.app/',
-    stack: ['Vite/Html', 'JS/Gsap', 'Scss'],
+    stack: ['Vite/Html', 'JS/Gsap', 'Tailwind'],
     inspiration: 'https://x.com/zzerou_/status/1812509007648846300?s=46',
     price: 3,
   },
