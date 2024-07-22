@@ -1,3 +1,8 @@
+import { StaticImageData } from "next/image"
+import DynamicCarousel1 from '@/images/components/dynamic-carousel-1.png'
+import InteractiveTouristicGallery from '@/images/components/interactive-touristic-gallery.png'
+import WillYouBeMyValentine from '@/images/components/will-you-be-my-valentine.png'
+
 export interface ComponentListInterface {
   name: string
   date: string
@@ -8,7 +13,7 @@ export interface ComponentListInterface {
   stack: string[]
   price: number
   inspiration?: string
-  blur?: boolean
+  image?: StaticImageData
 }
 
 export const componentsList: ComponentListInterface[] = [
@@ -23,6 +28,7 @@ export const componentsList: ComponentListInterface[] = [
     stack: ['Vite/Html', 'JS/Gsap', 'Tailwind'],
     inspiration: 'https://stripe.com/',
     price: 0,
+    image: DynamicCarousel1,
   },
   {
     name: 'Steps animation',
@@ -60,6 +66,7 @@ export const componentsList: ComponentListInterface[] = [
     inspiration:
       'https://www.figma.com/proto/aJApWjxpJFumL0bWIKjobP/Will-you-be-my-Valentine%3F-(Community)?type=design&node-id=1-2&t=aJIwMu7bwluIs3Le-0&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=1%3A2',
     price: 3,
+    image: WillYouBeMyValentine
   },
   {
     name: 'Interactive Touristic Gallery',
@@ -72,7 +79,7 @@ export const componentsList: ComponentListInterface[] = [
     stack: ['Vite/Html', 'JS/Gsap', 'Tailwind'],
     inspiration: 'https://x.com/EmaniUi/status/1804922365828051220',
     price: 0,
-    blur: true,
+    image: InteractiveTouristicGallery
   },
   {
     name: 'Interactive Hamburger Menu',

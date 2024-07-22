@@ -9,6 +9,7 @@ import { Text } from '@/catalyst/text'
 import { ComponentListInterface } from '@/constants/components-list'
 import { ExternalLink } from 'lucide-react'
 import { ButtonPremium } from '@/components/ButtonPremium'
+import Image from 'next/image'
 
 export default function Component({
   component,
@@ -69,25 +70,29 @@ export default function Component({
             )}
           </Heading>
           <div className="relative mt-6 flex h-[400px] w-full items-center justify-center rounded-xl border border-black/10 p-1 md:h-[640px] md:flex-1 dark:border-white/10">
-            <iframe
-              src={component.preview}
-              className="h-full w-full rounded-lg"
-              loading="lazy"
-              title={component.name}
-            />
-            {component.blur && (
-              <div className="absolute inset-0 p-1">
-                <div className="flex h-full w-full items-center justify-center rounded-lg bg-black/5 backdrop-blur-lg dark:bg-black/50">
-                  <Button
-                    className="absolute bottom-4"
-                    href={component.preview}
-                    target="_blank"
-                  >
-                    View demo on big screen
-                    <ExternalLink className="h-4 w-4" />
-                  </Button>
-                </div>
-              </div>
+            {component.image ? (
+              <Link
+                href={component.preview}
+                target="_blank"
+                className="group absolute inset-0 h-full w-full p-1"
+              >
+                <Image
+                  src={component.image}
+                  alt={component.name}
+                  className="h-full w-full rounded-lg object-cover duration-300 ease-in-out group-hover:opacity-50"
+                  loading="lazy"
+                />
+                <span className="text-md absolute left-1/2 top-1/2 z-10 -translate-x-1/2 -translate-y-1/2 transform rounded-full border-2 border-black bg-white px-5 py-2 font-medium opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100 dark:border-white dark:bg-black">
+                  Live preview
+                </span>
+              </Link>
+            ) : (
+              <iframe
+                src={component.preview}
+                className="h-full w-full rounded-lg"
+                loading="lazy"
+                title={component.name}
+              />
             )}
           </div>
           <div className="mt-4 flex w-full items-center justify-between">
