@@ -56,7 +56,7 @@ export default function Template({
               color="amber"
             >
               Get source code
-              <Lock className="h-4 w-4" />
+              {template.price > 0 && <Lock className="h-4 w-4" />}
             </Button>
             <Button
               className="w-full sm:w-fit"

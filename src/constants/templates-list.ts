@@ -1,6 +1,7 @@
 import { StaticImageData } from 'next/image'
-import CreativePortfolio from '@/images/tempaltes/creative-portfolio.jpg'
-import DeveloperPortfolio from '@/images/tempaltes/developer-portfolio.png'
+import CreativePortfolio from '@/images/templates/creative-portfolio.jpg'
+import DeveloperPortfolio from '@/images/templates/developer-portfolio.png'
+import TheFrenchTototte from '@/images/templates/the-french-tototte.png'
 
 export interface TemplatesListInterface {
   name: string
@@ -33,6 +34,23 @@ export const templatesList: TemplatesListInterface[] = [
     image: CreativePortfolio,
     imageWidth: 1600,
     imageHeight: 1200,
+  },
+  {
+    name: 'The French Tototte',
+    date: '2024-05-31',
+    title: 'The French Tototte',
+    summary: [
+      'A premium e-commerce template designed for high-end baby products. Featuring customizable "totottes" with exquisite flavors and luxurious accessories, this template showcases your products with style and elegance.',
+    ],
+    purchase:
+      'https://lndev-ui.lemonsqueezy.com/buy/f9a16c7d-f012-4ebd-baf1-46ebbf356a4c',
+    preview: 'https://thefrenchtototte.lndev.me/',
+    stack: ['NextJS', 'Tailwind', 'Swiper', 'GSAP', 'TS'],
+    inspiration: 'https://www.youtube.com/watch?v=FVEqE47pOLw',
+    price: 0,
+    image: TheFrenchTototte,
+    imageWidth: 2870,
+    imageHeight: 1556,
   },
   {
     name: 'Developer Portfolio',
