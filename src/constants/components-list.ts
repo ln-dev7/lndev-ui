@@ -1,4 +1,5 @@
 import { StaticImageData } from "next/image"
+import DynamicCarousel0 from '@/images/components/dynamic-carousel-0.png'
 import DynamicCarousel1 from '@/images/components/dynamic-carousel-1.png'
 import InteractiveTouristicGallery from '@/images/components/interactive-touristic-gallery.png'
 import WillYouBeMyValentine from '@/images/components/will-you-be-my-valentine.png'
@@ -56,7 +57,7 @@ export const componentsList: ComponentListInterface[] = [
   },
   {
     name: 'Input animation',
-    date: '2024-07-09',
+    date: '2024-07-11',
     title: 'Input animation',
     summary: [''],
     purchase:
@@ -65,6 +66,19 @@ export const componentsList: ComponentListInterface[] = [
     stack: ['Vite/Html', 'JS/Gsap', 'Scss'],
     inspiration: 'https://x.com/ln_dev7/status/1721123003180748881?s=46',
     price: 3,
+  },
+  {
+    name: 'Dynamic Carousel 0',
+    date: '2024-07-10',
+    title: 'Dynamic Carousel 0',
+    summary: [''],
+    purchase:
+      'https://lndev-ui.lemonsqueezy.com/buy/6b618584-11c6-4d37-8a37-dfc5edf33fdb',
+    preview: 'https://bc-challenge-04-06-24.vercel.app/',
+    stack: ['NextJS', 'Tailwind'],
+    inspiration: 'https://www.youtube.com/watch?v=L_vtMGGkfoI',
+    price: 0,
+    image: DynamicCarousel0,
   },
   {
     name: 'Will you be my valentine',
