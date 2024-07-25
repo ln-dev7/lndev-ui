@@ -19,6 +19,18 @@ export interface ComponentListInterface {
 
 export const componentsList: ComponentListInterface[] = [
   {
+    name: 'Numbers Animation',
+    date: '2024-07-25',
+    title: 'Numbers Animation',
+    summary: [''],
+    purchase:
+      'https://lndev-ui.lemonsqueezy.com/buy/ab12e35f-cd97-40d9-8822-c33cbc0d4d43',
+    preview: 'https://numbers-animation-1.vercel.app/',
+    stack: ['Vite/Html', 'JS/Gsap', 'Tailwind'],
+    inspiration: 'https://x.com/alisamadi__/status/1808697530303271369',
+    price: 0,
+  },
+  {
     name: 'Dynamic Carousel 2',
     date: '2024-07-23',
     title: 'Dynamic Carousel 2',
