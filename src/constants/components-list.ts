@@ -19,9 +19,9 @@ export interface ComponentListInterface {
 
 export const componentsList: ComponentListInterface[] = [
   {
-    name: 'Counter Animation',
+    name: 'Counter Animation 1',
     date: '2024-07-25',
-    title: 'Counter Animation',
+    title: 'Counter Animation 1',
     summary: [''],
     purchase:
       'https://lndev-ui.lemonsqueezy.com/buy/ab12e35f-cd97-40d9-8822-c33cbc0d4d43',
