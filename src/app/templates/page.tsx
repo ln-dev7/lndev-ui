@@ -2,6 +2,7 @@ import { Layout } from '@/components/Layout'
 import { Container } from '@/components/Container'
 import { AllTemplatesList } from '@/components/AllTemplatesList'
 import { Metadata } from 'next'
+import { Suspense } from 'react'
 
 export const metadata: Metadata = {
   title: 'Templates',
@@ -41,7 +42,9 @@ export default function Page() {
     <Layout page="templates">
       <Container className="mt-0">
         <div className="space-y-10 sm:space-y-12 lg:space-y-16">
-          <AllTemplatesList />
+          <Suspense fallback={<div>Loading...</div>}>
+            <AllTemplatesList />
+          </Suspense>
         </div>
       </Container>
     </Layout>
