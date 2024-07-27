@@ -1,4 +1,4 @@
-import { StaticImageData } from "next/image"
+import { StaticImageData } from 'next/image'
 import DynamicCarousel0 from '@/images/components/dynamic-carousel-0.png'
 import DynamicCarousel1 from '@/images/components/dynamic-carousel-1.png'
 import InteractiveTouristicGallery from '@/images/components/interactive-touristic-gallery.png'
@@ -31,13 +31,13 @@ export const componentsList: ComponentListInterface[] = [
     price: 3,
   },
   {
-    name: 'Numbers Animation',
+    name: 'Counter Animation 1',
     date: '2024-07-25',
-    title: 'Numbers Animation',
+    title: 'Counter Animation 1',
     summary: [''],
     purchase:
       'https://lndev-ui.lemonsqueezy.com/buy/ab12e35f-cd97-40d9-8822-c33cbc0d4d43',
-    preview: 'https://numbers-animation-1.vercel.app/',
+    preview: 'https://counter-animation-1.vercel.app/',
     stack: ['Vite/Html', 'JS/Gsap', 'Tailwind'],
     inspiration: 'https://x.com/alisamadi__/status/1808697530303271369',
     price: 0,
