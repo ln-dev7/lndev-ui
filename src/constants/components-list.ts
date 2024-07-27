@@ -92,6 +92,18 @@ export const componentsList: ComponentListInterface[] = [
     price: 3,
   },
   {
+    name: 'Clerk Component 1',
+    date: '2024-07-10',
+    title: 'Clerk Component 1',
+    summary: [''],
+    purchase:
+      'https://lndev-ui.lemonsqueezy.com/buy/7b3be3e1-395d-421b-91e7-d842e11868be',
+    preview: 'https://clerk-comp-1.vercel.app/',
+    stack: ['Vite/Html', 'JS/Gsap', 'Tailwind'],
+    inspiration: 'https://clerk.com',
+    price: 0,
+  },
+  {
     name: 'Dynamic Carousel 0',
     date: '2024-07-10',
     title: 'Dynamic Carousel 0',
