@@ -5,38 +5,58 @@ import {
   componentsList,
   ComponentListInterface,
 } from '@/constants/components-list'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Component from './Component'
+import { usePathname, useRouter, useSearchParams } from 'next/navigation'
 
 export function AllComponentsList() {
-  const [filteredComponents, setFilteredComponents] =
-    useState<ComponentListInterface[]>(componentsList)
-  const filterComponents = (status: string) => {
-    if (status === 'all') {
-      setFilteredComponents(componentsList)
-    } else {
-      if (status === 'free') {
-        setFilteredComponents(
-          componentsList.filter((component) => component.price === 0),
-        )
-      } else {
-        setFilteredComponents(
-          componentsList.filter((component) => component.price > 0),
-        )
-      }
+  const searchParams = useSearchParams()
+  const pathname = usePathname()
+  const { replace } = useRouter()
+
+  const getFilteredComponents = (
+    type: string | null,
+  ): ComponentListInterface[] => {
+    if (type === 'free') {
+      return componentsList.filter((component) => component.price === 0)
+    } else if (type === 'premium') {
+      return componentsList.filter((component) => component.price > 0)
     }
+    return componentsList
   }
+
+  const initialFilterType = searchParams.get('type') || 'all'
+  const [filteredComponents, setFilteredComponents] = useState<
+    ComponentListInterface[]
+  >(getFilteredComponents(initialFilterType))
+
+  const filterComponents = (type: string) => {
+    const params = new URLSearchParams(searchParams)
+    if (type === 'all') {
+      params.delete('type')
+    } else {
+      params.set('type', type)
+    }
+    setFilteredComponents(getFilteredComponents(type))
+    replace(`${pathname}?${params.toString()}`)
+  }
+
+  useEffect(() => {
+    setFilteredComponents(getFilteredComponents(searchParams.get('type')))
+  }, [searchParams])
+
   return (
     <div className="space-y-4">
       <div className="flex w-full items-center justify-between gap-2">
         <Select
-          name="status"
+          name="type"
           className="!w-40"
+          defaultValue={initialFilterType}
           onChange={(e) => filterComponents(e.target.value)}
         >
           <option value="all">All</option>
           <option value="free">Free</option>
-          <option value="Premium">Premium</option>
+          <option value="premium">Premium</option>
         </Select>
         <Text className="">{filteredComponents.length} components found</Text>
       </div>
