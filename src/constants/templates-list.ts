@@ -2,6 +2,9 @@ import { StaticImageData } from 'next/image'
 import CreativePortfolio from '@/images/templates/creative-portfolio.jpg'
 import DeveloperPortfolio from '@/images/templates/developer-portfolio.png'
 import TheFrenchTototte from '@/images/templates/the-french-tototte.png'
+import CanonYaounde from '@/images/templates/canon-yaounde.png'
+import FlutterCameroon from '@/images/templates/flutter-cameroon.png'
+import WebAppPhotography from '@/images/templates/web-app-photography.png'
 
 export interface TemplatesListInterface {
   name: string
@@ -67,5 +70,47 @@ export const templatesList: TemplatesListInterface[] = [
     image: DeveloperPortfolio,
     imageWidth: 2870,
     imageHeight: 1556,
+  },
+  {
+    name: 'Football Club',
+    date: '2022-11-21',
+    title: 'Football Club',
+    summary: [''],
+    purchase:
+      'https://lndev-ui.lemonsqueezy.com/buy/0edfc331-bfcc-41aa-b749-d94925f420ad',
+    preview: 'https://canon-yde-inte.vercel.app/',
+    stack: ['Html', 'Scss', 'JS'],
+    price: 0,
+    image: CanonYaounde,
+    imageWidth: 2872,
+    imageHeight: 1552,
+  },
+  {
+    name: 'Photography Web App',
+    date: '2022-09-23',
+    title: 'Photography Web App',
+    summary: [''],
+    purchase:
+      'https://lndev-ui.lemonsqueezy.com/buy/a92bf7e5-0cfe-4a93-8729-9e2de7d284f0',
+    preview: 'https://web-app-photography.vercel.app/',
+    stack: ['Html/Vite', 'Scss', 'JS'],
+    price: 0,
+    image: WebAppPhotography,
+    imageWidth: 2872,
+    imageHeight: 1552,
+  },
+  {
+    name: 'Community Event',
+    date: '2022-08-07',
+    title: 'Community Event',
+    summary: [''],
+    purchase:
+      'https://lndev-ui.lemonsqueezy.com/buy/67825a89-e9ad-4dde-a225-85f6880f393e',
+    preview: 'https://flutter-cm-inte.vercel.app/',
+    stack: ['Html', 'Scss', 'JS'],
+    price: 0,
+    image: FlutterCameroon,
+    imageWidth: 2872,
+    imageHeight: 1552,
   },
 ]
