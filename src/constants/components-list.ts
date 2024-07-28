@@ -19,6 +19,18 @@ export interface ComponentListInterface {
 
 export const componentsList: ComponentListInterface[] = [
   {
+    name: 'Feedback Interaction',
+    date: '2024-07-28',
+    title: 'Feedback Interaction',
+    summary: [''],
+    purchase:
+      'https://lndev-ui.lemonsqueezy.com/buy/ef75bb48-9140-45fb-aa77-141f346bc357',
+    preview: 'https://feedback-interaction.vercel.app/',
+    stack: ['Vite/Html', 'JS/Gsap', 'Tailwind'],
+    inspiration: 'https://x.com/musabalfawal/status/1816845946044465339',
+    price: 0,
+  },
+  {
     name: 'Guest Picker',
     date: '2024-07-27',
     title: 'Guest Picker',
