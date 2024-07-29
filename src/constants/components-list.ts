@@ -19,6 +19,18 @@ export interface ComponentListInterface {
 
 export const componentsList: ComponentListInterface[] = [
   {
+    name: 'Next Component 1',
+    date: '2024-07-29',
+    title: 'Next Component 1',
+    summary: [''],
+    purchase:
+      'https://lndev-ui.lemonsqueezy.com/buy/ba75b4f2-759f-4db6-b692-6062931efda9',
+    preview: 'https://next-comp-1.vercel.app/',
+    stack: ['Vite/Html', 'JS/Gsap', 'Tailwind'],
+    inspiration: 'https://nextjs.org',
+    price: 0,
+  },
+  {
     name: 'Guest Picker',
     date: '2024-07-28',
     title: 'Guest Picker',
