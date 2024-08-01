@@ -19,6 +19,18 @@ export interface ComponentListInterface {
 
 export const componentsList: ComponentListInterface[] = [
   {
+    name: 'Email Interaction',
+    date: '2024-08-01',
+    title: 'Email Interaction',
+    summary: [''],
+    purchase:
+      'https://lndev-ui.lemonsqueezy.com/buy/9b19cde7-0fb3-46bd-9a76-92f2256aa589',
+    preview: 'https://email-interaction.vercel.app/',
+    stack: ['Vite/Html', 'JS/Gsap', 'Tailwind'],
+    inspiration: 'https://x.com/alisamadi__/status/1817002092625822138',
+    price: 3,
+  },
+  {
     name: 'Next Component 1',
     date: '2024-07-29',
     title: 'Next Component 1',
