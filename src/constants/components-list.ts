@@ -20,7 +20,7 @@ export interface ComponentListInterface {
 export const componentsList: ComponentListInterface[] = [
   {
     name: 'Email Interaction',
-    date: '2024-08-01',
+    date: '2024-08-02',
     title: 'Email Interaction',
     summary: [''],
     purchase:
@@ -29,6 +29,18 @@ export const componentsList: ComponentListInterface[] = [
     stack: ['Vite/Html', 'JS/Gsap', 'Tailwind'],
     inspiration: 'https://x.com/alisamadi__/status/1817002092625822138',
     price: 3,
+  },
+  {
+    name: 'Dynamic Carousel 3',
+    date: '2024-08-01',
+    title: 'Dynamic Carousel 3',
+    summary: [''],
+    purchase:
+      'https://lndev-ui.lemonsqueezy.com/buy/ec61db6b-2571-41c0-9f00-0bad77dd675f',
+    preview: 'https://stripe-section-3.vercel.app/',
+    stack: ['Vite/Html', 'JS/Gsap', 'Tailwind'],
+    inspiration: 'https://stripe.com/en-de/use-cases/finance-automation',
+    price: 0,
   },
   {
     name: 'Next Component 1',
