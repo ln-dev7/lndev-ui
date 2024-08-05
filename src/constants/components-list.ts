@@ -3,10 +3,10 @@ import DynamicCarousel0 from '@/images/components/dynamic-carousel-0.png'
 import DynamicCarousel1 from '@/images/components/dynamic-carousel-1.png'
 import InteractiveTouristicGallery from '@/images/components/interactive-touristic-gallery.png'
 import WillYouBeMyValentine from '@/images/components/will-you-be-my-valentine.png'
+import OlympicGames from '@/images/components/olympic-games.png'
 
 export interface ComponentListInterface {
   name: string
-  date: string
   title: string
   summary: string[]
   purchase: string
@@ -20,7 +20,6 @@ export interface ComponentListInterface {
 export const componentsList: ComponentListInterface[] = [
   {
     name: 'Email Interaction',
-    date: '2024-08-02',
     title: 'Email Interaction',
     summary: [''],
     purchase:
@@ -32,7 +31,6 @@ export const componentsList: ComponentListInterface[] = [
   },
   {
     name: 'Dynamic Carousel 3',
-    date: '2024-08-01',
     title: 'Dynamic Carousel 3',
     summary: [''],
     purchase:
@@ -44,7 +42,6 @@ export const componentsList: ComponentListInterface[] = [
   },
   {
     name: 'Next Component 1',
-    date: '2024-07-29',
     title: 'Next Component 1',
     summary: [''],
     purchase:
@@ -56,7 +53,6 @@ export const componentsList: ComponentListInterface[] = [
   },
   {
     name: 'Guest Picker',
-    date: '2024-07-28',
     title: 'Guest Picker',
     summary: [''],
     purchase:
@@ -68,7 +64,6 @@ export const componentsList: ComponentListInterface[] = [
   },
   {
     name: 'Feedback Interaction',
-    date: '2024-07-27',
     title: 'Feedback Interaction',
     summary: [''],
     purchase:
@@ -80,7 +75,6 @@ export const componentsList: ComponentListInterface[] = [
   },
   {
     name: 'Counter Animation 1',
-    date: '2024-07-25',
     title: 'Counter Animation 1',
     summary: [''],
     purchase:
@@ -92,7 +86,6 @@ export const componentsList: ComponentListInterface[] = [
   },
   {
     name: 'Dynamic Carousel 2',
-    date: '2024-07-23',
     title: 'Dynamic Carousel 2',
     summary: [''],
     purchase:
@@ -104,7 +97,6 @@ export const componentsList: ComponentListInterface[] = [
   },
   {
     name: 'Dynamic Carousel 1',
-    date: '2024-07-22',
     title: 'Dynamic Carousel 1',
     summary: [''],
     purchase:
@@ -117,7 +109,6 @@ export const componentsList: ComponentListInterface[] = [
   },
   {
     name: 'Steps animation',
-    date: '2024-07-15',
     title: 'Steps animation',
     summary: [''],
     purchase:
@@ -129,7 +120,6 @@ export const componentsList: ComponentListInterface[] = [
   },
   {
     name: 'Input animation',
-    date: '2024-07-11',
     title: 'Input animation',
     summary: [''],
     purchase:
@@ -141,7 +131,6 @@ export const componentsList: ComponentListInterface[] = [
   },
   {
     name: 'Clerk Component 1',
-    date: '2024-07-10',
     title: 'Clerk Component 1',
     summary: [''],
     purchase:
@@ -153,7 +142,6 @@ export const componentsList: ComponentListInterface[] = [
   },
   {
     name: 'Dynamic Carousel 0',
-    date: '2024-07-10',
     title: 'Dynamic Carousel 0',
     summary: [''],
     purchase:
@@ -166,7 +154,6 @@ export const componentsList: ComponentListInterface[] = [
   },
   {
     name: 'Will you be my valentine',
-    date: '2024-07-09',
     title: 'Will you be my valentine',
     summary: [''],
     purchase:
@@ -180,7 +167,6 @@ export const componentsList: ComponentListInterface[] = [
   },
   {
     name: 'Interactive Touristic Gallery',
-    date: '2024-06-25',
     title: 'Interactive Touristic Gallery',
     summary: [''],
     purchase:
@@ -193,7 +179,6 @@ export const componentsList: ComponentListInterface[] = [
   },
   {
     name: 'Interactive Hamburger Menu',
-    date: '2024-06-23',
     title: 'Interactive Hamburger Menu',
     summary: [''],
     purchase:
@@ -205,7 +190,6 @@ export const componentsList: ComponentListInterface[] = [
   },
   {
     name: 'Dynamic Action Bar',
-    date: '2024-06-13',
     title: 'Dynamic Action Bar',
     summary: [''],
     purchase:
@@ -217,7 +201,6 @@ export const componentsList: ComponentListInterface[] = [
   },
   {
     name: 'Login Button',
-    date: '2024-06-12',
     title: 'Login Button',
     summary: [''],
     purchase:
@@ -228,7 +211,6 @@ export const componentsList: ComponentListInterface[] = [
   },
   {
     name: 'Dual Button',
-    date: '2023-11-05',
     title: 'Dual Button',
     summary: [''],
     purchase:
@@ -241,7 +223,6 @@ export const componentsList: ComponentListInterface[] = [
   },
   {
     name: 'Dark Mode Toggle',
-    date: '2023-10-22',
     title: 'Dark Mode Toggle',
     summary: [''],
     purchase:
@@ -252,7 +233,6 @@ export const componentsList: ComponentListInterface[] = [
   },
   {
     name: 'Delete Interaction',
-    date: '2023-07-21',
     title: 'Delete Interaction',
     summary: [''],
     purchase:
@@ -263,7 +243,6 @@ export const componentsList: ComponentListInterface[] = [
   },
   {
     name: 'Form With Validation',
-    date: '2022-10-20',
     title: 'Form With Validation',
     summary: [''],
     purchase:

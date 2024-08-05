@@ -40,11 +40,6 @@ export default function Template({
                   <Badge key={stack}>{stack}</Badge>
                 ))}
               </div>
-              <Text className="lg:mt-2">
-                <time dateTime={template.date}>
-                  {formatDate(template.date)}
-                </time>
-              </Text>
             </div>
           </div>
           <div className="mt-4 flex flex-col items-center gap-2 sm:flex-row">

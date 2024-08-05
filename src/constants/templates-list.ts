@@ -8,7 +8,6 @@ import WebAppPhotography from '@/images/templates/web-app-photography.png'
 
 export interface TemplatesListInterface {
   name: string
-  date: string
   title: string
   summary: string[]
   purchase: string
@@ -24,7 +23,6 @@ export interface TemplatesListInterface {
 export const templatesList: TemplatesListInterface[] = [
   {
     name: 'Creative Portfolio',
-    date: '2024-07-17',
     title: 'Creative Portfolio',
     summary: [
       'Explore a creative portfolio site showcasing innovative and aesthetically pleasing web interfaces. This site features recent projects, demonstrating expertise in front-end development and modern design integration. Ideal for discovering inspiring examples of web design and interactive application development.',
@@ -40,7 +38,6 @@ export const templatesList: TemplatesListInterface[] = [
   },
   {
     name: 'The French Tototte',
-    date: '2024-05-31',
     title: 'The French Tototte',
     summary: [
       'A premium e-commerce template designed for high-end baby products. Featuring customizable "totottes" with exquisite flavors and luxurious accessories, this template showcases your products with style and elegance.',
@@ -57,7 +54,6 @@ export const templatesList: TemplatesListInterface[] = [
   },
   {
     name: 'Developer Portfolio',
-    date: '2024-05-10',
     title: 'Developer Portfolio',
     summary: [
       'Discover a developer portfolio site showcasing a collection of projects and skills. This site features a clean and professional design, highlighting expertise in web development and software engineering. Ideal for showcasing a portfolio of work and attracting potential clients or employers.',
@@ -73,7 +69,6 @@ export const templatesList: TemplatesListInterface[] = [
   },
   {
     name: 'Football Club',
-    date: '2022-11-21',
     title: 'Football Club',
     summary: [''],
     purchase:
@@ -87,7 +82,6 @@ export const templatesList: TemplatesListInterface[] = [
   },
   {
     name: 'Photography Web App',
-    date: '2022-09-23',
     title: 'Photography Web App',
     summary: [''],
     purchase:
@@ -101,7 +95,6 @@ export const templatesList: TemplatesListInterface[] = [
   },
   {
     name: 'Community Event',
-    date: '2022-08-07',
     title: 'Community Event',
     summary: [''],
     purchase:

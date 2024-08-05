@@ -33,11 +33,6 @@ export default function Component({
                   <Badge key={stack}>{stack}</Badge>
                 ))}
               </div>
-              <Text className="lg:mt-2">
-                <time dateTime={component.date}>
-                  {formatDate(component.date)}
-                </time>
-              </Text>
             </div>
           </div>
           {component.price > 0 ? (
