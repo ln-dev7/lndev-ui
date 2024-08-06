@@ -19,6 +19,17 @@ export interface ComponentListInterface {
 
 export const componentsList: ComponentListInterface[] = [
   {
+    name: 'Olympic Games',
+    title: 'Olympic Games Animation',
+    summary: [''],
+    purchase:
+      'https://lndev-ui.lemonsqueezy.com/buy/a4d98ff3-37d3-447c-ad8d-9a9a0c5e0fde',
+    preview: 'https://benjamin-code-jo-2024.vercel.app/',
+    stack: ['NextJS', 'Framer Motion', 'Lottie', 'Tailwind'],
+    price: 10,
+    image: OlympicGames,
+  },
+  {
     name: 'Email Interaction',
     title: 'Email Interaction',
     summary: [''],
