@@ -20,7 +20,7 @@ export interface ComponentListInterface {
 export const componentsList: ComponentListInterface[] = [
   {
     name: 'Continent Medals',
-    title: 'Olympic Games Animation',
+    title: 'Continent Medals Animation',
     summary: [''],
     purchase:
       'https://lndev-ui.lemonsqueezy.com/buy/a4d98ff3-37d3-447c-ad8d-9a9a0c5e0fde',
