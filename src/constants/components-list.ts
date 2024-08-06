@@ -3,7 +3,7 @@ import DynamicCarousel0 from '@/images/components/dynamic-carousel-0.png'
 import DynamicCarousel1 from '@/images/components/dynamic-carousel-1.png'
 import InteractiveTouristicGallery from '@/images/components/interactive-touristic-gallery.png'
 import WillYouBeMyValentine from '@/images/components/will-you-be-my-valentine.png'
-import OlympicGames from '@/images/components/olympic-games.png'
+import ContinentMedals from '@/images/components/continent-medals.png'
 
 export interface ComponentListInterface {
   name: string
@@ -19,7 +19,7 @@ export interface ComponentListInterface {
 
 export const componentsList: ComponentListInterface[] = [
   {
-    name: 'Olympic Games',
+    name: 'Continent Medals',
     title: 'Olympic Games Animation',
     summary: [''],
     purchase:
@@ -27,7 +27,7 @@ export const componentsList: ComponentListInterface[] = [
     preview: 'https://benjamin-code-jo-2024.vercel.app/',
     stack: ['NextJS', 'Framer Motion', 'Lottie', 'Tailwind'],
     price: 10,
-    image: OlympicGames,
+    image: ContinentMedals,
   },
   {
     name: 'Email Interaction',
