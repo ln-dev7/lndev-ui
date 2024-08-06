@@ -24,7 +24,7 @@ export const componentsList: ComponentListInterface[] = [
     summary: [''],
     purchase:
       'https://lndev-ui.lemonsqueezy.com/buy/a4d98ff3-37d3-447c-ad8d-9a9a0c5e0fde',
-    preview: 'https://benjamin-code-jo-2024.vercel.app/',
+    preview: 'https://continent-medals-animation.vercel.app/',
     stack: ['NextJS', 'Framer Motion', 'Lottie', 'Tailwind'],
     price: 10,
     image: ContinentMedals,
