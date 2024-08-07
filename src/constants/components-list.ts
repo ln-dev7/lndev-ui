@@ -19,6 +19,17 @@ export interface ComponentListInterface {
 
 export const componentsList: ComponentListInterface[] = [
   {
+    name: 'Pricing Interaction',
+    title: 'Pricing Interaction',
+    summary: [''],
+    purchase:
+      'https://lndev-ui.lemonsqueezy.com/buy/4b5546f7-16ee-43f1-b437-0d92f4665c8f',
+    preview: 'https://tiered-pricing-interaction.vercel.app/',
+    stack: ['Vite/React', 'Tailwind'],
+    inspiration: 'https://x.com/nitishkmrk/status/1820348008300708027',
+    price: 3,
+  },
+  {
     name: 'Continent Medals',
     title: 'Continent Medals Animation',
     summary: [''],
